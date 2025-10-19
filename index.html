@@ -4,16 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
+
+    <button id="open-sidebar-button" onclick="openSidebar()">
+        ☰
+    </button>
+
     <nav>
         <ul>
-            <li><a href="index.html">Início</a></li>
+            <li><button id="close-sidebar-button" onclick="closeSidebar()">✕</button></li>
+            <li class="home-li"><a class="active-link" href="index.html">Início</a></li>
             <li><a href="sobre.html">Sobre</a></li>
             <li><a href="projetos.html">Projetos</a></li>
-            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="servicos.html">Serviços</a></li>
+            <li><a class="accent-link" href="contato.html">Contato</a></li>
         </ul>
     </nav>
-    
+    <main>
+        <h1>Bem-vindo ao menu responsivo!</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam nesciunt possimus eum facilis dolor ratione explicabo dolorum! Doloremque asperiores incidunt saepe iste dolorum molestias culpa doloribus, rerum aut placeat distinctio.</p>
+    </main>
+
 </body>
 </html>
