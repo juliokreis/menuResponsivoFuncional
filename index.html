@@ -11,13 +11,15 @@
 
 <body>
 
-    <button id="open-sidebar-button" onclick="openSidebar()">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <button id="open-sidebar-button" onclick="openSidebar()" aria-label="open sidebar" aria-expanded="false" aria-controls="navbar">
         ☰
     </button>
 
     <nav id="navbar">
         <ul>
-            <li><button id="close-sidebar-button" onclick="closeSidebar()">
+            <li><button id="close-sidebar-button" onclick="closeSidebar()" aria-label="close sidebar">
                     ✖
                 </button>
             </li>
@@ -28,6 +30,9 @@
             <li><a class="accent-link" href="contato.html">Contato</a></li>
         </ul>
     </nav>
+
+    <div id="overlay" onclick="closeSidebar()" aria-hidden="true"></div>
+
     <main>
         <h1>Bem-vindo ao menu responsivo!</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam nesciunt possimus eum facilis dolor ratione
