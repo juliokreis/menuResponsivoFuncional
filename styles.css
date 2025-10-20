@@ -13,27 +13,27 @@
     box-sizing: border-box;
 }
 
-html{
+html {
     font-family: 'Roboto', sans-serif;
     color: var(--text-color);
 }
 
-body{
+body {
     min-height: 100vh;
     min-height: 100dvh;
     background-color: var(--primary-color);
 }
 
-main{
+main {
     padding: (5em 7%);
     margin: 2em;
 }
 
-main h1{
+main h1 {
     font-size: 2em;
 }
 
-main p{
+main p {
     margin-top: .35em;
 }
 
@@ -69,7 +69,7 @@ nav a:hover {
 }
 
 nav a.active-link {
-    border-bottom: 1px solid var(--text-color);
+    border-bottom: 2px solid var(--text-color);
 }
 
 nav a.accent-link {
@@ -78,16 +78,19 @@ nav a.accent-link {
 
 #open-sidebar-button {
     display: none;
-    background: #c9c9c9;
+    background: none;
+    color: var(--text-color);
     border: none;
     padding: 1em;
     margin-left: auto;
     cursor: pointer;
 }
 
+
 #close-sidebar-button {
     display: none;
-    background: #c9c9c9;
+    background: none;
+    color: var(--text-color);
     border: none;
     padding: 1em;
     cursor: pointer;
@@ -126,7 +129,8 @@ nav a.accent-link {
 
 @media screen and (max-width: 575px) {
 
-    #open-sidebar-button, #close-sidebar-button {
+    #open-sidebar-button,
+    #close-sidebar-button {
         display: block;
     }
 
@@ -145,7 +149,7 @@ nav a.accent-link {
         right: 0;
     }
 
-    nav.show ~ #overlay {
+    nav.show~#overlay {
         display: block;
     }
 
