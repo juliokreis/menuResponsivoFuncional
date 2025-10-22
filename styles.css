@@ -86,7 +86,6 @@ nav a.accent-link {
     cursor: pointer;
 }
 
-
 #close-sidebar-button {
     display: none;
     background: none;
@@ -126,6 +125,8 @@ nav a.accent-link {
     pointer-events: auto;
     outline: 3px solid #fff;
 }
+
+
 
 @media screen and (max-width: 575px) {
 
